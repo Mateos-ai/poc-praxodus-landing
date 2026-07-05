@@ -9,11 +9,19 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   ...(isExport
     ? {
+        // Static export for GitHub Pages. The `/` -> `/en` redirect is handled
+        // by public/index.html (redirects() is unsupported in export mode).
         output: "export",
         basePath,
         trailingSlash: true,
       }
-    : {}),
+    : {
+        // Dev / server build: redirect the root to the default locale so
+        // `npm run dev` works at http://localhost:3000/.
+        async redirects() {
+          return [{ source: "/", destination: "/en", permanent: false }];
+        },
+      }),
 };
 
 export default nextConfig;
