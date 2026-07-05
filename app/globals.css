@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   Praxodus — "Steel & Signal" design tokens
+   Navy authority + a controlled teal signal. Industrial, not toy.
+----------------------------------------------------------------- */
+@theme {
+  /* neutrals — cool, biased toward steel (chosen, not default) */
+  --color-ink: #0e1a2b;
+  --color-ink-2: #16263b;
+  --color-steel: #33475b;
+  --color-slate: #5c6e82;
+  --color-fog: #e7ecf1;
+  --color-line: #dce3eb;
+  --color-paper: #fbfcfd;
+
+  /* text */
+  --color-text: #12202f;
+  --color-text-soft: #43566a;
+  --color-muted: #64748b;
+
+  /* signal accent */
+  --color-teal: #0fa697;
+  --color-teal-deep: #0b7e73;
+  --color-teal-bright: #12b9a9;
+  --color-teal-tint: #e6f6f4;
+
+  /* type roles (wired to next/font variables in layout) */
+  --font-display: var(--font-rubik), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-assistant), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  ::selection {
+    background-color: var(--color-teal);
+    color: #04231f;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+}
+
+/* utility: monospace eyebrow label */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-teal-deep);
+}
