@@ -3,6 +3,7 @@ import { PageHero } from "@/components/PageHero";
 import { CtaBand } from "@/components/CtaBand";
 import { getDictionary } from "@/lib/dictionaries";
 import { isLocale, type Locale } from "@/lib/i18n";
+import { asset } from "@/lib/config";
 
 function initials(name: string): string {
   return name
@@ -12,16 +13,34 @@ function initials(name: string): string {
     .join("");
 }
 
-function MemberCard({ name, role }: { name: string; role: string }) {
+function MemberCard({
+  name,
+  role,
+  img,
+}: {
+  name: string;
+  role: string;
+  img?: string;
+}) {
   return (
-    <div className="flex items-center gap-4 rounded-2xl border border-line bg-white p-5">
-      <span
-        aria-hidden
-        className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-fog font-display text-base font-semibold text-teal-deep"
-      >
-        {initials(name)}
-      </span>
-      <div className="min-w-0">
+    <div className="overflow-hidden rounded-2xl border border-line bg-white">
+      {img ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={asset(img)}
+          alt={name}
+          loading="lazy"
+          className="aspect-square w-full object-cover object-top"
+        />
+      ) : (
+        <div
+          aria-hidden
+          className="flex aspect-square w-full items-center justify-center bg-fog font-display text-6xl font-semibold text-teal-deep"
+        >
+          {initials(name)}
+        </div>
+      )}
+      <div className="p-5">
         <p className="font-semibold text-ink">{name}</p>
         <p className="mt-0.5 text-sm text-text-soft">{role}</p>
       </div>
@@ -51,7 +70,7 @@ export default async function TeamPage({
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {members.leadership.map((m) => (
-              <MemberCard key={m.name} name={m.name} role={m.role} />
+              <MemberCard key={m.name} name={m.name} role={m.role} img={m.img} />
             ))}
           </div>
 
@@ -60,7 +79,7 @@ export default async function TeamPage({
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {members.advisory.map((m) => (
-              <MemberCard key={m.name} name={m.name} role={m.role} />
+              <MemberCard key={m.name} name={m.name} role={m.role} img={m.img} />
             ))}
           </div>
         </div>
