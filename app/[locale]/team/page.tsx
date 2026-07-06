@@ -68,14 +68,13 @@ export default async function TeamPage({
           <h2 className="font-mono text-sm uppercase tracking-[0.16em] text-teal-deep">
             {p.leadershipHeading}
           </h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {members.leadership.map((m) => (
               <MemberCard key={m.name} name={m.name} role={m.role} img={m.img} />
             ))}
           </div>
         </div>
       </section>
-
       <CtaBand locale={locale as Locale} content={t.cta} />
     </main>
   );

@@ -353,9 +353,9 @@ const en = {
   teamMembers: {
     leadership: [
       { name: "Yair Nativ", role: "CEO & Co-Founder · 3x Founder", img: "/team/yair.png" },
-      { name: "Aviv Yogev", role: "Co-Founder · Operations", img: "" },
-      { name: "Noam Biran", role: "Activity Manager · Industry & BD", img: "/team/noam.jpeg" },
-      { name: "David Rajcher", role: "CTO · Enterprise Architecture", img: "/team/david.png" },
+      { name: "David Rajcher", role: "CTO & Co-Founder · Enterprise Architecture", img: "/team/david.png" },
+      { name: "Aviv Yogev", role: "CBDO & Co-Founder · Operations", img: "" },
+      { name: "Noam Biran", role: "Activity Manager · Industry & Business Development", img: "/team/noam.jpeg" },
     ],
   },
 
@@ -809,9 +809,9 @@ const he = {
   teamMembers: {
     leadership: [
       { name: "יאיר נתיב", role: "CEO ומייסד-שותף · 3x Founder", img: "/team/yair.png" },
-      { name: "אביב יוגב", role: "מייסד-שותף · תפעול", img: "" },
+      { name: "דוד רייכר", role: "CTO ומייסד-שותף · ארכיטקטורת Enterprise", img: "/team/david.png" },
+      { name: "אביב יוגב", role: "CBDO ומייסד-שותף · תפעול", img: "" },
       { name: "נעם בירן", role: "מנהל פעילות · תעשייה ופיתוח עסקי", img: "/team/noam.jpeg" },
-      { name: "דוד רייכר", role: "CTO · ארכיטקטורת Enterprise", img: "/team/david.png" },
     ],
   },
 
