@@ -348,12 +348,6 @@ const en = {
       lead: "When 42% of AI projects fail on governance and change, the people running yours are the whole story. Ours have shipped at Slack, Microsoft, MIT, and across Israeli industry.",
     },
     leadershipHeading: "Leadership",
-    advisoryHeading: "Advisory board",
-    why: {
-      eyebrow: "Why it matters",
-      title: "12 people who have already done this",
-      body: "Not a diagnosis from the outside — operators who have built products, run operations, and studied how work actually changes. That's what turns an AI ambition into a system that lasts.",
-    },
   },
 
   teamMembers: {
@@ -362,16 +356,6 @@ const en = {
       { name: "Aviv Yogev", role: "Co-Founder · Operations", img: "" },
       { name: "Noam Biran", role: "Activity Manager · Industry & BD", img: "/team/noam.jpeg" },
       { name: "David Rajcher", role: "CTO · Enterprise Architecture", img: "/team/david.png" },
-      { name: "Yuval Pecht", role: "CPO · Workflow Optimization", img: "/team/yuval.webp" },
-      { name: "Oded Shefer", role: "Industrial Psychologist · 15yr B2B", img: "/team/oded.jpeg" },
-      { name: "Gil Zysberg", role: "Head of Design · Enterprise UX", img: "/team/gil.png" },
-    ],
-    advisory: [
-      { name: "Noam Mantel", role: "Ex VP Product · Slack & Microsoft", img: "/team/noam_m.jpeg" },
-      { name: "Michael Schrage", role: "MIT Research Fellow · Digital Transformation", img: "/team/michael.webp" },
-      { name: "Veronika Bukhman", role: "AVP Sales · Similarweb ($300M)", img: "/team/veronika.jpeg" },
-      { name: "Gloria Mark", role: "UC Irvine · Workplace Behavior Expert", img: "/team/gloaria.webp" },
-      { name: "Nir Eisikovits", role: "UMass · AI Ethics Professor", img: "/team/nir.webp" },
     ],
   },
 
@@ -820,12 +804,6 @@ const he = {
       lead: "כש-42% מפרויקטי ה-AI נכשלים על ממשל ושינוי, האנשים שמריצים את שלכם הם כל הסיפור. שלנו יישמו ב-Slack, Microsoft, MIT ולרוחב התעשייה הישראלית.",
     },
     leadershipHeading: "הנהלה",
-    advisoryHeading: "ועדה מייעצת",
-    why: {
-      eyebrow: "למה זה משנה",
-      title: "12 אנשים שכבר עשו את זה",
-      body: "לא אבחון מבחוץ — אנשי ביצוע שבנו מוצרים, ניהלו תפעול וחקרו איך עבודה באמת משתנה. זה מה שהופך שאיפת AI למערכת שמחזיקה לאורך זמן.",
-    },
   },
 
   teamMembers: {
@@ -834,16 +812,6 @@ const he = {
       { name: "אביב יוגב", role: "מייסד-שותף · תפעול", img: "" },
       { name: "נעם בירן", role: "מנהל פעילות · תעשייה ופיתוח עסקי", img: "/team/noam.jpeg" },
       { name: "דוד רייכר", role: "CTO · ארכיטקטורת Enterprise", img: "/team/david.png" },
-      { name: "יובל פכט", role: "CPO · אופטימיזציית תהליכים", img: "/team/yuval.webp" },
-      { name: "עודד שפר", role: "פסיכולוג תעשייתי · 15 שנות B2B", img: "/team/oded.jpeg" },
-      { name: "גיל זיסברג", role: "ראש עיצוב · Enterprise UX", img: "/team/gil.png" },
-    ],
-    advisory: [
-      { name: "נעם מנטל", role: "Ex VP Product · Slack ו-Microsoft", img: "/team/noam_m.jpeg" },
-      { name: "מיכאל שרגא", role: "MIT Research Fellow · טרנספורמציה דיגיטלית", img: "/team/michael.webp" },
-      { name: "ורוניקה בוכמן", role: "AVP Sales · Similarweb ($300M)", img: "/team/veronika.jpeg" },
-      { name: "גלוריה מארק", role: "UC Irvine · מומחית להתנהגות בעבודה", img: "/team/gloaria.webp" },
-      { name: "ניר אייסיקוביץ'", role: "UMass · פרופסור לאתיקה של AI", img: "/team/nir.webp" },
     ],
   },
 

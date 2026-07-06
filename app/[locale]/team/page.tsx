@@ -73,27 +73,6 @@ export default async function TeamPage({
               <MemberCard key={m.name} name={m.name} role={m.role} img={m.img} />
             ))}
           </div>
-
-          <h2 className="mt-16 font-mono text-sm uppercase tracking-[0.16em] text-teal-deep">
-            {p.advisoryHeading} ★
-          </h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {members.advisory.map((m) => (
-              <MemberCard key={m.name} name={m.name} role={m.role} img={m.img} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-fog py-20 sm:py-24">
-        <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
-          <p className="eyebrow">{p.why.eyebrow}</p>
-          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-            {p.why.title}
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-text-soft">
-            {p.why.body}
-          </p>
         </div>
       </section>
 
